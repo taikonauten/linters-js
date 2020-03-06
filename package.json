@@ -1,0 +1,34 @@
+{
+  "name": "@taikonauten/linters-js",
+  "version": "1.0.0",
+  "description": "This package provides the JavaScript linter used at Taikonauten",
+  "license": "MIT",
+  "keywords": [
+    "lint",
+    "linting",
+    "JavaScript",
+    "ESlint"
+  ],
+  "contributors": [
+    "Kevin Woblick <kw@taikonauten.com>",
+    "Tobias Schubert <ts@taikonauten.com>",
+    "Peter Schilling <ps@taikonauten.com>",
+    "Thomas Lempa <tl@taikonauten.com>"
+  ],
+  "homepage": "https://github.com/taikonauten/linters-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taikonauten/linters-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taikonauten/linters-js/issues"
+  },
+  "scripts": {
+    "test": "eslint ./test"
+  },
+  "dependencies": {
+    "eslint": "^6.8",
+    "babel-eslint": "^10.1",
+    "eslint-plugin-babel": "^5.3"
+  }
+}
