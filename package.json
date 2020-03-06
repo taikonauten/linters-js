@@ -1,6 +1,6 @@
 {
   "name": "@taikonauten/linters-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package provides the JavaScript linter used at Taikonauten",
   "license": "MIT",
   "keywords": [
