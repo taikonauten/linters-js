@@ -28,7 +28,6 @@ export default class Taiko{
 const callback = function() {
   const test = 1;
   test = 2;
-
   return `The number is ${test}`;
 };
 

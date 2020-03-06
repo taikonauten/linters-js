@@ -18,11 +18,15 @@ The following important settings are applied to all JavaScript files generated o
 
 * Spaces are used for indentation. The default indent is 2 spaces.
 * Single quotes are used for regular strings.
-* 
+* Console statements are not allowed.
+* Unused variables are not allowed.
+* Proper spacing before and after braces, and between keywords.
+* Maximum of 2 empty lines between blocks.
+* Minimum of 1 blank line before return statements.
 
 ## Installation
 
-Run the following two commands in your terminal to install the package and then create a symlink to the .stylelintrc file:
+Run the following two commands in your terminal to install the package:
 
 ```bash
 npm install --save-dev @taikonauten/linters-js
@@ -64,7 +68,7 @@ For VS Code, install the [ESLint](https://marketplace.visualstudio.com/items?ite
 Use the `npm run test` command.
 
 * The `correct.js` file MUST not return errors.
-* The `wrong.js` file MUST return 11 errors.
+* The `wrong.js` file MUST return 12 errors.
 
 ---
 
