@@ -16,5 +16,8 @@
   "plugins": [
     "babel"
   ],
-  "extends": "./eslint/index.js"
+  "extends": [
+    "eslint:recommended",
+    "./node_modules/@taikonauten/linters-js/eslint/index.js"
+  ]
 }
