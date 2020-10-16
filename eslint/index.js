@@ -1,6 +1,5 @@
 module.exports = {
 
-  extends: 'eslint:recommended',
   rules: {
     'arrow-spacing': [2, {'before': true, 'after': true}],
     'brace-style': [2, '1tbs', {'allowSingleLine': true}],

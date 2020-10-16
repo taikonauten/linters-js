@@ -29,7 +29,7 @@ The following important settings are applied to all JavaScript files generated o
 Run the following two commands in your terminal to install the package:
 
 ```bash
-npm install --save-dev @taikonauten/linters-js
+npm install --save-dev @taikonauten/linters-js eslint babel-eslint eslint-plugin-babel
 ```
 
 Create a `.eslintrc` file in your project root and use the following content for it:
@@ -53,14 +53,16 @@ Create a `.eslintrc` file in your project root and use the following content for
   "plugins": [
     "babel"
   ],
-  "extends": "./node_modules/@taikonauten/linters-js/eslint/index.js"
+  "extends": [
+    "eslint:recommended",
+    "./node_modules/@taikonauten/linters-js/eslint/index.js"
+  ]
 }
-
 ```
 
-After that, make sure your editor or IDE supports the `.eslintrc` file. PhpStorm works with it right out of the box.  
-For Sublime Text, install the [SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint) plugin.  
-For Atom, install the [linter-eslint](https://atom.io/packages/linter-eslint) plugin.  
+After that, make sure your editor or IDE supports the `.eslintrc` file. PhpStorm works with it right out of the box.
+For Sublime Text, install the [SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint) plugin.
+For Atom, install the [linter-eslint](https://atom.io/packages/linter-eslint) plugin.
 For VS Code, install the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin.
 
 ## Testing
@@ -68,7 +70,7 @@ For VS Code, install the [ESLint](https://marketplace.visualstudio.com/items?ite
 Use the `npm run test` command.
 
 * The `correct.js` file MUST not return errors.
-* The `wrong.js` file MUST return 12 errors.
+* The `wrong.js` file MUST return 11 errors.
 
 ---
 
