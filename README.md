@@ -38,18 +38,11 @@ Create a `.eslintrc` file in your project root and use the following content for
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 12,
     "sourceType": "module",
-    "ecmaFeatures": {
-      "module": true,
-      "modules": true
-    }
+    "ecmaFeatures": {}
   },
-  "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
-  },
+  "env": {},
   "plugins": [
     "babel"
   ],
@@ -59,6 +52,11 @@ Create a `.eslintrc` file in your project root and use the following content for
   ]
 }
 ```
+
+This is an example config and in most cases you will need to fine tune it depending on the project.
+More information on how to configure: [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
+
+## Using with your IDE or Editor
 
 After that, make sure your editor or IDE supports the `.eslintrc` file. PhpStorm works with it right out of the box.
 For Sublime Text, install the [SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint) plugin.
