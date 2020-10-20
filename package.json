@@ -23,14 +23,7 @@
   "bugs": {
     "url": "https://github.com/taikonauten/linters-js/issues"
   },
-  "scripts": {
-    "test": "eslint ./test"
-  },
-  "dependencies": {
-    "eslint": "^7.2.0",
-    "babel-eslint": "^10.1",
-    "eslint-plugin-babel": "^5.3"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "author": "engineering@taikonauten.com"
 }

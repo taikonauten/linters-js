@@ -63,13 +63,6 @@ For Sublime Text, install the [SublimeLinter-eslint](https://github.com/SublimeL
 For Atom, install the [linter-eslint](https://atom.io/packages/linter-eslint) plugin.
 For VS Code, install the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin.
 
-## Testing
-
-Use the `npm run test` command.
-
-* The `correct.js` file MUST not return errors.
-* The `wrong.js` file MUST return 11 errors.
-
 ---
 
 Made with ♡ at Taikonauten
