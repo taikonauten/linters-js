@@ -32,25 +32,25 @@ Run the following two commands in your terminal to install the package:
 npm install --save-dev @taikonauten/linters-js eslint babel-eslint eslint-plugin-babel
 ```
 
-Create a `.eslintrc` file in your project root and use the following content for it:
+Create a `.eslintrc.js` file in your project root and use the following content for it:
 
-```json
-{
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "ecmaFeatures": {}
+```javascript
+module.exports = {
+  env: {
+    es2021: true,
   },
-  "env": {},
-  "plugins": [
-    "babel"
+  extends: [
+    'eslint:recommended',
+    './node_modules/@taikonauten/linters-js/eslint/index.js',
   ],
-  "extends": [
-    "eslint:recommended",
-    "./node_modules/@taikonauten/linters-js/eslint/index.js"
-  ]
-}
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {},
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: []
+};
 ```
 
 This is an example config and in most cases you will need to fine tune it depending on the project.
